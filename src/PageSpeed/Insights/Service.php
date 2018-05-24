@@ -29,7 +29,7 @@ class Service
 			throw new InvalidArgumentException('Invalid URL');
 		}
 
-		$client = new \Guzzle\Service\Client($this->gateway);
+		$client = new \Guzzle\Client($this->gateway);
 
 		/** @var $request \Guzzle\Http\Message\Request */
 		$request = $client->get('runPagespeed');
