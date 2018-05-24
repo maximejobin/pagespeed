@@ -29,7 +29,7 @@ class Service
 			throw new InvalidArgumentException('Invalid URL');
 		}
 
-		$client = new \Guzzle\Client($this->gateway);
+		$client = new \GuzzleHttp\Client($this->gateway);
 
 		/** @var $request \Guzzle\Http\Message\Request */
 		$request = $client->get('runPagespeed');
@@ -53,7 +53,7 @@ class Service
 			$response = json_decode($response, true);
 
 			return $response;
-		} catch (\Guzzle\Http\Exception\ClientErrorResponseException $e) {
+		} catch (\GuzzleHttp\Exception\ClientErrorResponseException $e) {
 			$response = $e->getResponse();
 			$response = $response->getBody();
 			$response = json_decode($response);
