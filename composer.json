@@ -1,9 +1,9 @@
 {
-    "name": "sgrodzicki/pagespeed",
+    "name": "maximejobin/pagespeed",
     "type": "library",
     "description": "A PHP library to interact with the PageSpeed Insights API",
     "keywords": ["PageSpeed", "Insights", "API", "Google"],
-    "homepage": "https://github.com/sgrodzicki/pagespeed",
+    "homepage": "https://github.com/maximejobin/pagespeed",
     "license": "MIT",
     "require": {
         "php": ">=5.3.3",
